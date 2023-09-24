@@ -1,9 +1,15 @@
+import { useEffect } from 'react';
 import { getGifs } from '../helpers/getGifs';
 
 export const GifGrid = ({category}) => {
 
+    // USE EFFECT ES UN HOOK DE REACT QUE SIRVE PARA 
+    // DISPARAR EFECTOS SECUNDARIOS
+
+    useEffect(()=>{
+        getGifs(category);
+    }, [])
     
-    getGifs(category);
 
     return (
         <>
