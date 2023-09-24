@@ -5,7 +5,7 @@ import { GifGrid } from './components/GifGrid';
 export const GifBucketApp = ()=> {
 
     // ESPACIO EN MEMORIA PARA MANEJAR CATEGORIAS
-    const [categories, setCategories] = useState(['Starfield','Halo']);
+    const [categories, setCategories] = useState(['Starfield']);
 
     const onAddCategory = (newCategory) => {
         // Verificar que no se inserte una categoria existente
